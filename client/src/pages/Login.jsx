@@ -21,6 +21,7 @@ const Login = () => {
         axiosClient.post('/login', payload)
         .then(({data}) => {
             setUser(data.user);
+            
             setToken(data.token)
         }).catch(err => {
             const response = err.response;
