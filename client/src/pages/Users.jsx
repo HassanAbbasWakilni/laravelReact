@@ -18,6 +18,7 @@ export default function Users() {
       .then(() => {
         getUsers()
       })
+      
   }
 
   const getUsers = () => {
